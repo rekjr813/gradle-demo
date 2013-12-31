@@ -69,6 +69,8 @@ publishing {
 
             pom.withXml {
                 asNode().with {
+                    appendNode('packaging', 'jar')
+                    appendNode('name', 'gradle-demo')
                     appendNode('description', 'Demo project for Free Stack Demo')
                     appendNode('url', 'https://bitbucket.org/jfrog/gradle-demo')
                     appendNode('licenses').with {
