@@ -13,7 +13,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'org.jfrog.buildinfo:build-info-extractor-gradle:2.2.0'
+        classpath 'org.jfrog.buildinfo:build-info-extractor-gradle:2.2.4'
     }
 }
 // Apply the java plugin to add support for Java
@@ -22,7 +22,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'artifactory-publish'
 
 group = 'com.jfrog.example'
-version = '1.3-SNAPSHOT'
+version = '1.4-SNAPSHOT'
 status = 'SNAPSHOT'
 
 // In this section you declare where to find the dependencies of your project
